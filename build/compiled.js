@@ -2131,6 +2131,15 @@ ${text}</tr>
     },
     renderEmbed(app, ...args) {
       return args;
+    },
+    calculateLevel(letters, words, sentences) {
+      if (words === 0 || sentences === 0) {
+        return 0;
+      }
+      let level = Math.round(
+        4.71 * (letters / words) + 0.5 * words / sentences - 21.43
+      );
+      return level <= 0 ? 0 : level;
     }
   };
   var plugin_default = plugin;
