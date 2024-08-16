@@ -3,5 +3,5 @@
     "module": "esnext",
     "target": "esnext"
   },
-  "include": ["lib/**/*"]
+  "include": ["lib/**/*", "lib/marked..min.js"]
 }
