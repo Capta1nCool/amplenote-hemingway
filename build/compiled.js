@@ -2141,8 +2141,8 @@ ${text}</tr>
       let preWords = ["is", "are", "was", "were", "be", "been", "being"];
       for (let i = 0; i < words.length - 1; i++) {
         if (preWords.includes(words[i].toLowerCase()) && words[i + 1].match(/ed$/)) {
-          words[i] = `<mark style="background-color:#ffffff;">${words[i]}`;
-          words[i + 1] = `${words[i + 1]}</mark>`;
+          words[i] = `<mark style="background-color:#0A2A2c;color:#65D2AA;">${words[i]}`;
+          words[i + 2] = `${words[i + 2]}</mark>`;
         }
       }
       return words.join(" ");
